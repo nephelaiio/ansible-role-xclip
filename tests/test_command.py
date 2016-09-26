@@ -6,4 +6,4 @@ testinfra_hosts = \
 
 
 def test_command(Command):
-    assert Command('xclip --version').rc == 0
+    assert Command('xclip -version').rc == 0
