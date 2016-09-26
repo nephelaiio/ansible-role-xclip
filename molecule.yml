@@ -8,32 +8,27 @@ docker:
         image: debian
         image_version: jessie
         ansible_groups:
-          - xclip-debian
+          - test
       - name: ansible-xclip-xenial
         image: ubuntu
         image_version: xenial
         ansible_groups:
-          - xclip-ubuntu
-      - name: ansible-xclip-centos6
-        image: centos
-        image_version: 6
-        ansible_groups:
-          - xclip-centos
+          - test
       - name: ansible-xclip-centos7
         image: centos
         image_version: 7
         ansible_groups:
-          - xclip-centos
+          - test
       - name: ansible-xclip-arch
         image: pritunl/archlinux
         image_version: latest
         dockerfile: docker/arch.dockerfile
-        ansible_groups:
-          - xclip-arch
         command: /bin/bash
+        ansible_groups:
+          - test
 
 ansible:
   requirements_file: dependencies.yml
 
 verifier:
-  name: serverspec
+  name: testinfra

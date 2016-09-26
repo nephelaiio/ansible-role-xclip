@@ -1,4 +1,5 @@
 *.swp
 .molecule/
-__pycache__/
 .cache/
+__pycache__/
+Gemfile.lock
