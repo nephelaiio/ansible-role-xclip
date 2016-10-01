@@ -1,8 +1,5 @@
 ---
 # User variables for role
 xclip_packages: xclip
+
 xclip_packages_state: present
-#xclip_conf_template: xclip.conf
-#xclip_conf_path: /etc/xclip/xclip.conf
-#xclip_service_name: xclip
-#xclip_service_status: started
