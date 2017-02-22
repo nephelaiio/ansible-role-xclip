@@ -2,9 +2,9 @@
 ---
 # Install packages
 - name: install xclip packages
-  package: >
-    name="{{ xclip_packages }}"
-    state="{{ xclip_packages_state }}"
+  package:
+    name: "{{ xclip_packages }}"
+    state: "{{ xclip_packages_state }}"
   become: yes
   tags:
     - xclip

@@ -5,28 +5,28 @@ driver:
 
 docker:
   containers:
-      - name: ansible-xclip-jessie
-        image: debian
-        image_version: jessie
-        ansible_groups:
-          - test
-      - name: ansible-xclip-xenial
-        image: ubuntu
-        image_version: xenial
-        ansible_groups:
-          - test
-      - name: ansible-xclip-centos7
-        image: centos
-        image_version: 7
-        ansible_groups:
-          - test
-      - name: ansible-xclip-arch
-        image: pritunl/archlinux
-        image_version: latest
-        dockerfile: docker/arch.dockerfile
-        command: /bin/bash
-        ansible_groups:
-          - test
+    - name: ansible-xclip-jessie
+      image: debian
+      image_version: jessie
+      ansible_groups:
+        - test
+    - name: ansible-xclip-xenial
+      image: ubuntu
+      image_version: xenial
+      ansible_groups:
+        - test
+    - name: ansible-xclip-centos7
+      image: centos
+      image_version: 7
+      ansible_groups:
+        - test
+    - name: ansible-xclip-arch
+      image: pritunl/archlinux
+      image_version: latest
+      dockerfile: docker/arch.dockerfile
+      command: /bin/bash
+      ansible_groups:
+        - test
 
 dependency:
   requirements_file: dependencies.yml
