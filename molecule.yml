@@ -32,6 +32,12 @@ dependency:
   requirements_file: dependencies.yml
   name: galaxy
 
+molecule:
+  ignore_paths:
+    - .git
+    - .ropeproject
+    - .molecule
+
 verifier:
   name: testinfra
   options:
