@@ -1,0 +1,4 @@
+---
+xclip_packages:
+  - epel-release
+  - xclip

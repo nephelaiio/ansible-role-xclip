@@ -3,7 +3,7 @@
   package:
     name: "{{ item }}"
     state: "{{ xclip_packages_state }}"
-  become: yes
   with_items: "{{ xclip_packages }}"
+  become: yes
   tags:
     - xclip
