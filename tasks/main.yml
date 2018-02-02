@@ -12,5 +12,5 @@
   package:
     name: "{{ item }}"
     state: "{{ xclip_packages_state }}"
-  with_items: "{{ xclip_packages }}"
+  with_items: "{{ xclip_packages | default(xclip_packages_default) }}"
   become: yes
