@@ -1,7 +1,6 @@
 # nephelaiio.xclip
 
-
-[![Build Status](https://github.com/nephelaiio/ansible-role-xclip/workflows/.github/workflows/main.yml/badge.svg)](https://travis-ci.org/nephelaiio/ansible-role-xclip)
+[![Build Status](https://github.com/nephelaiio/ansible-role-xclip/workflows/CI/badge.svg)](https://github.com/nephelaiio/ansible-role-xclip/actions)
 [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-nephelaiio.xclip-blue.svg)](https://galaxy.ansible.com/nephelaiio/xclip/)
 
 An [ansible role](https://galaxy.ansible.com/nephelaiio/xclip) to install and configure xclip
